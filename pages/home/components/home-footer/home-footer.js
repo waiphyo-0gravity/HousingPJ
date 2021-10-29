@@ -1,0 +1,5 @@
+const HomeFooter = _ => {
+    return (
+
+    );
+}

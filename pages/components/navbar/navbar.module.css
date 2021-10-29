@@ -1,0 +1,16 @@
+.navbar {
+    height: 180px;
+    background: url('/images/header-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    height: 100%;
+    padding: 24px;
+}
+
+.telNo {
+    align-self: center;
+}

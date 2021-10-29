@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+	scroll-snap-type: x mandatory;	
+	display: flex;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: scroll;
+    height: 400px;
+}
+
+.img {
+    scroll-snap-align: start;
+    position: relative;
+    min-width: 100vw;
+    object-fit: cover;
+}
+
+.pageControlContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.pageControl {
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    background: #EEB84D;
+    border-radius: 6px;
+}

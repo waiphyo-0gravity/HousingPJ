@@ -1,0 +1,250 @@
+.container {
+    display: flex;
+    margin-top: 24px;
+}
+
+.container > * {
+    margin-left: 16px;
+}
+
+.container > *:first-child {
+    margin: 0;
+}
+
+/* 
+    Left
+*/
+.leftContainer {
+    flex: 0.8 0;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #EEB84D;
+    border-radius: 0 32px 0 0;
+}
+
+.leftList {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftList > h1 {
+    padding: 8px;
+    background: #EEB84D;
+    border-radius: 0 30px;
+}
+
+/* 
+    Middle.
+*/
+
+.middleContainer {
+    flex: 2 0;
+    height: 100px;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.middleContainer h1 {
+    text-align: center;
+    padding: 24px 0 ;
+}
+
+.middleListType1 {
+    
+}
+
+.middleListItemType1 {
+    display: flex;
+    padding: 16px;
+    margin-top: 24px;
+    border: 1px solid #EEB84D;
+}
+
+.middleListItemType1 > img {
+    flex: 1 1;
+    height: 200px;
+    align-self: center;
+    object-fit: cover;
+}
+
+.middleListItemType1Body {
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.middleListItemType1Body * {
+    word-break: break-word;
+}
+
+.middleListItemType1Body button {
+    @apply font-bold py-2 px-4 bg-primary rounded;
+    margin-top: 16px;
+    width: 50%;
+}
+
+.middleListType1 .firstItem {
+    margin: 0;
+}
+
+.firstItem {}
+
+.middleListType2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 24px;
+    border: 2px solid #EEB84D;
+    margin-top: 36px;
+}
+
+.middleListItemType2 {
+    flex: 0 1 calc(50% - 18px);
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.middleListType2 > h1 {
+    @apply text-2xl font-extrabold;
+    width: 100%;
+    text-align: center;
+}
+
+.middleListItemType2 > img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.middleListItemType2 > h2 {
+    margin: 8px 0;
+}
+
+.middleListItemType2 button {
+    @apply font-bold py-2 px-4 bg-primary rounded;
+    margin-top: 16px;
+    width: 60%;
+}
+
+.stepContainer {
+    display: inline-flex;
+    overflow-y: hidden;
+}
+
+.stepContainer span {
+    @apply font-bold;
+    background: #EEB84D;
+    padding: 6px 0 6px 6px;
+}
+
+.arrow {
+    background: #EEB84D;
+    width: 36px;
+    height: auto;
+    z-index: -1;
+    transform: translate(-18px, 0) rotate(-45deg);
+    -webkit-transform: translate(-18px, 0) rotate(-45deg);
+}
+
+.middleListType4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 24px 24px;
+    margin: 36px 0;
+    border: 2px solid #EEB84D;
+}
+
+.middleListItemType4 {
+    display: inline-flex;
+    gap: 16px;
+}
+
+.middleListItemType4 > div {
+    flex: 1 0;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.middleListItemType4 > div > * {
+    align-items: center
+}
+
+.middleListItemType4 > button {
+    flex: 1 0;
+}
+
+.middleListType4 > h1 {
+    @apply text-2xl font-extrabold;
+}
+
+.middleListItemType4 button {
+    @apply font-bold py-2 px-4 bg-primary rounded;
+}
+
+/* 
+    Right.
+*/
+
+.rightContainer {
+    flex: 0.8 0;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.rightListType1 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cardContainer {
+    background: #EEB84D;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.cardInner {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background: white;
+    margin: 3px;
+    border-radius: 86px 0 86px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardInner img {
+    width: 30%;
+    height: auto;
+}
+
+.rightListContainer {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    border: 2px solid #EEB84D;
+    border-radius: 34px 0 0 0;
+}
+
+.rightListType2 {    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 24px 24px 24px;
+    gap: 24px;
+}
+
+.rightListContainer h2 {
+    @apply font-bold;
+    text-align: center;
+    padding: 8px;
+    border-radius: 32px 0 32px 0;
+    background: #EEB84D;
+}
+
+.rightListType2 img {
+    flex: 1 0 calc(50% - 12px);
+}
